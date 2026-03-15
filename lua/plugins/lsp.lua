@@ -12,6 +12,16 @@ local servers = {
 	["html"] = { settings = {} },
 	["cssls"] = { settings = {} },
 	["qmlls"] = { settings = {} },
+	["pylsp"] = {
+		settings = {
+			pylsp = {
+				plugins = {
+					pycodestyle = { enabled = true, maxLineLength = 200 },
+					-- flake8 = { enabled = true, ignore = "E501" },
+				},
+			}
+		}
+	}
 }
 
 local function map(mode, lhs, rhs)
