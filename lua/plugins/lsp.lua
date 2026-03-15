@@ -39,7 +39,8 @@ return {
 		},
 		init = function()
 			vim.g.coq_settings = {
-				auto_start = 'shut-up'
+				auto_start = 'shut-up',
+				keymap = { manual_complete = "" },
 			}
 		end,
 		config = function()
